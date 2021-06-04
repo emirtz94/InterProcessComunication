@@ -37,3 +37,10 @@ Socket programing steps:
 * accept() is the system call used on server side to create client handles
 * In Linux terminology handles are called as "file descriptors" which are just positive integer numbers. Client handles are called "communication file descriptors" or "data sockets"
 
+# UNIX DOMAIN SOCKETS
+
+* Unix domain sockets are used for carrying out IPC between two processes runing on the same machine
+* Using Unix domain sockets, we can setup STREAM or DATAGRAM based comunication
+  * STREAM - When large files neads to be moved or copied from one location to another  
+  * DATAGRAM - When small units of data needs to be moved from one process to another within a system
+
