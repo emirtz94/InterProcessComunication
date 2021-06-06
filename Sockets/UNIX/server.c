@@ -82,6 +82,12 @@ int main() {
 		exit(EXIT_FAILURE);
 	}
 
+	ret = listen(connection_socket, 20);
+	if(ret == -1) {
+		perror("listen");
+		exit(EXIT_FAILURE);
+	}
+	
 	while(1) {
 		printf("Waiting on accept() sys call\n");
 		/*
